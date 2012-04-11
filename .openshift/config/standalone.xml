@@ -311,6 +311,15 @@
                         <policy-module code="Delegating" flag="required"/>
                     </authorization>
                 </security-domain>
+                <security-domain name="JBossWS">
+                    <authentication>
+                        <login-module code="UsersRoles" flag="required">
+                            <module-option name="usersProperties" value="standalone/configuration/jbossws-users.properties"/>
+                            <module-option name="unauthenticatedIdentity" value="anonymous"/>
+                            <module-option name="rolesProperties" value="standalone/configuration/jbossws-roles.properties"/>
+                        </login-module>
+                    </authentication>
+                </security-domain>
             </security-domains>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:threads:1.1"/>
