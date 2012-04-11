@@ -314,9 +314,9 @@
                 <security-domain name="JBossWS">
                     <authentication>
                         <login-module code="UsersRoles" flag="required">
-                            <module-option name="usersProperties" value="standalone/configuration/jbossws-users.properties"/>
+                            <module-option name="usersProperties" value="/var/lib/stickshift/b9a3ef6e17dd4c3ebc1a40fb26f7def0/jbossws/repo/.openshift/config/jbossws-users.properties"/>
                             <module-option name="unauthenticatedIdentity" value="anonymous"/>
-                            <module-option name="rolesProperties" value="standalone/configuration/jbossws-roles.properties"/>
+                            <module-option name="rolesProperties" value="/var/lib/stickshift/b9a3ef6e17dd4c3ebc1a40fb26f7def0/jbossws/repo/.openshift/config/jbossws-roles.properties"/>
                         </login-module>
                     </authentication>
                 </security-domain>
